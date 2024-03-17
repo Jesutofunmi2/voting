@@ -1,0 +1,128 @@
+@import "../../../assets/styles/base/variables";
+@import "../../../assets/styles/base/mixins";
+
+.btn {
+  height: 48px;
+  font-size: 16px;
+  font-weight: normal;
+  padding: 0px 25px;
+  border-radius: 5px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  outline: none !important;
+  box-shadow: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: none !important;
+  @include respond-to("tablet") {
+    height: 42px;
+    padding: 0 17px;
+  }
+  &.cover {
+    width: 100%;
+  }
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+.btn--primary {
+  background-color: $purple-color;
+  color: $white-color;
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: lighten(#766df4, 6%);
+  }
+}
+
+.btn--success {
+  background-color: $success-color;
+  color: $white-color;
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: lighten($success-color, 6%);
+  }
+}
+
+.btn--yellow {
+  background-color: $dark-yellow;
+  color: $white-color;
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: lighten($dark-yellow, 6%);
+  }
+}
+.btn--orange {
+  background-color: $orange-color;
+  color: $white-color;
+
+  &:disabled {
+    cursor: not-allowed;
+    background-color: lighten($orange-color, 6%);
+  }
+}
+
+.btn--outline {
+  background-color: $white-color;
+  color: $purple-color;
+  border: 1px solid $purple-color;
+}
+
+.btn--outline-red {
+  background-color: $white-color;
+  color: $danger-color;
+  border: 1px solid $danger-color;
+}
+
+.btn--outline-green {
+  background-color: $white-color;
+  color: $lumi-light-green;
+  border: 1px solid $lumi-light-green;
+}
+
+.btn--outline-gray {
+  background-color: $white-color;
+  color: $gray-color;
+  border: 1px solid $gray-color;
+}
+
+.btn--danger {
+  background: red;
+  color: $white-color;
+
+  &:disabled {
+    background: rgb(255, 122, 122);
+  }
+}
+
+.btn--disabled {
+  background: #c5c5c5;
+  color: $white-color;
+
+  &:disabled {
+    cursor: not-allowed;
+    user-select: none;
+  }
+}
+
+.btn--yellow {
+  background-color: $dark-yellow;
+  color: $white-color;
+}
+
+.btn--green {
+  background-color: $lumi-green;
+  color: $white-color;
+}
+
+.smallBtn {
+  height: 32px;
+  padding: 0 15px;
+  font-size: 12px;
+}

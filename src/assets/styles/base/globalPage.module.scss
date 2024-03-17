@@ -1,0 +1,123 @@
+@import "./mixins";
+@import "./variables";
+
+.rowNavigations {
+  border-bottom: 1px solid #e8e9eb;
+  // margin: 25px 0 2em 0;
+  display: flex;
+  overflow-y: auto;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    font-size: 16px;
+    text-decoration: none !important;
+    padding: 0.5em 0;
+    color: #696677;
+    border-bottom: 2px solid transparent;
+    min-width: fit-content;
+    margin-right: 2rem;
+    @include respond-to("tablet") {
+      margin-right: 15px;
+    }
+
+    &.active {
+      color: $purple-color;
+      border-color: $purple-color;
+    }
+  }
+}
+
+.plan {
+  color: #1e016f;
+  background: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 12px;
+  border-radius: 16px;
+  border: 2px solid #1e016f;
+  max-width: max-content;
+  font-size: 12px;
+  &.growthPlan {
+    background: $success-color;
+    color: $white-color;
+    border-color: $success-color;
+  }
+  &.essentialPlan {
+    background: $dark-yellow;
+    color: $white-color;
+    border-color: $dark-yellow;
+  }
+  &.scalePlan {
+    background: $purple-color;
+    color: $white-color;
+    border-color: $purple-color;
+  }
+}
+
+.cardWithBackground {
+  background-color: #f3f1fc;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border-radius: 8px;
+}
+
+.cardWithBorder {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border-radius: 8px;
+  border: $light-border;
+}
+.tableHeader {
+  padding: 24px 24px 24px 24px;
+  border-bottom: 2px solid #e7f1fa;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  @include respond-to("large") {
+    padding: 15px 15px 5px 15px;
+  }
+  .searchField {
+    max-width: 600px;
+    min-width: 350px;
+    width: 100%;
+    @include respond-to("tablet") {
+      min-width: 100%;
+    }
+  }
+}
+
+.pagePaddings {
+  padding-top: 3.5em;
+  padding-bottom: 30px;
+  @include respond-to("big-tablet") {
+    padding-top: 1.5em;
+  }
+}
+
+.borderBottom {
+  border-bottom: $light-border;
+}
+
+.borderTop {
+  border-top: $light-border;
+  &Purple {
+    border-color: $purple-color;
+  }
+}
+
+.rowSpaceBetween {
+  display: flex;
+  justify-content: space-between;
+}
+
+.borderBottom {
+  border-bottom: $light-border;
+}

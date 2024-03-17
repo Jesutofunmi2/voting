@@ -1,0 +1,109 @@
+// Edit this section an set color variable with occurdance with the design
+$main--bg: #e5e5e5;
+$secondary-bg: #f3f1fc;
+$purple-color: #55A355;
+$dark-purple-color: #1e016f;
+$white-color: #ffffff;
+$dark-color: #15112d;
+$gray-color: #F8FDFF;
+$light-gray-color: #696677;
+$danger-color: #dc3545;
+$lumi-purple: #F8EDED;
+$dark-yellow: #f7ad3c;
+$success-color: #55A355;
+$orange-color: #fd561f;
+$lumi-green: #55A355;
+
+$lumi-light-green: #75ce9a;
+
+.white {
+  background: $white-color !important;
+  &--text {
+    color: $white-color !important;
+  }
+}
+.purple {
+  background: $purple-color !important;
+  &--text {
+    color: $purple-color !important;
+  }
+}
+.gray {
+  background: $light-gray-color;
+  &--text {
+    color: $light-gray-color;
+  }
+}
+.dark {
+  background: $dark-color;
+  &--text {
+    color: $dark-color;
+  }
+}
+.error {
+  background: $danger-color !important;
+  &--text {
+    color: $danger-color !important;
+  }
+}
+
+.orange {
+  background: $orange-color;
+  &--text {
+    color: $orange-color;
+  }
+}
+
+.yellow {
+  background: $dark-yellow;
+  &--text {
+    color: $dark-yellow;
+  }
+}
+
+.success {
+  background: $success-color;
+  &--text {
+    color: $success-color;
+  }
+  &--squared {
+    color: $success-color;
+    background: #e5fff0;
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 8px;
+  }
+  &--rounded {
+    color: $success-color;
+    background: #e5fff0;
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 12px;
+  }
+}
+
+.pending {
+  background: $dark-yellow;
+  &--text {
+    color: $dark-yellow;
+  }
+  &--squared {
+    color: $dark-yellow;
+    background: #fff8e5;
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 8px;
+  }
+  &--rounded {
+    padding: 7px 8px;
+    color: $dark-yellow;
+    background: #fff8e5;
+    display: inline-block;
+    border-radius: 12px;
+  }
+}
+
+$shadow: 0px 4px 20px rgba(135, 126, 144, 0.15);
+$purple-border: 1px solid #766df4;
+$light-border: 1px solid #ddd;
+$input-border: 0.5px solid #979797;

@@ -1,0 +1,25 @@
+@import "../../../assets/styles/base/variables";
+.search__field {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  border-radius: 6px;
+  background: $lumi-purple;
+  padding: 0 5px 0 10px;
+  max-width: 803px;
+
+  input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 14px;
+    color: #696677;
+    padding: 0;
+  }
+
+  .search-btn {
+    height: 35px;
+  }
+}

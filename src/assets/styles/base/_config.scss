@@ -1,0 +1,56 @@
+@import "./variables";
+@import "./mixins";
+
+* {
+  font-family: "DM Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+//set body properties
+body {
+  margin: auto;
+  padding: 0px;
+  max-width: 1600px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+}
+
+hr {
+  margin: 8px 0;
+}
+
+label {
+  margin-bottom: 0;
+}
+
+span {
+  line-height: 1.1;
+}
+
+// add custom scrollbars
+* {
+  &::-webkit-scrollbar {
+    width: 0.6em;
+    height: 0.6em;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #f3f1fc;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #d2d0d8;
+    border-radius: 15px;
+  }
+}
